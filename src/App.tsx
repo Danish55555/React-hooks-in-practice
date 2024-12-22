@@ -59,6 +59,7 @@ function App() {
   return (
     <>
       <div>
+        <h1>UseEffect with Lazy Loading</h1>
         <table border={1} cellPadding="8" style={{ borderCollapse: 'collapse', width: '100%' }}>
           <thead>
             <tr>
