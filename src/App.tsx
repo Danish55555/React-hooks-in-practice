@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import UseEffectExample from "./views/useEffect";
 import UseRefExample from "./views/useRef";
+import UseMemoExample from "./views/useMemo";
 
 function Navbar() {
   return (
@@ -11,6 +12,9 @@ function Navbar() {
       </Link>
       <Link to="/useref" style={styles.link}>
         UseRef Example
+      </Link>
+      <Link to="/usememo" style={styles.link}>
+        UseMemo Example
       </Link>
     </nav>
   );
@@ -24,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<UseEffectExample />} />
           <Route path="/useref" element={<UseRefExample />} />
+          <Route path="/usememo" element={<UseMemoExample />} />
         </Routes>
       </div>
     </BrowserRouter>
